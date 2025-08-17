@@ -20,7 +20,7 @@ const EmployeeDashboard = (props,{data}) => {
   
 
   return (
-    <div className='p-20 bg-[#1c1c1c] h-screen'>
+    <div className='p-5 bg-[#1c1c1c] h-screen'>
       {showPopUp && <Popup data={props.data}/>}
         <Header  changeUser={props.changeUser} data={props.data}/>
         <TaskListNumbers data={props.data}/>
