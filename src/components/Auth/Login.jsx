@@ -11,21 +11,14 @@ const Login = ({ handleLogin }) => {
   };
   return (
     <>
-      <div className="flex w-full h-screen justify-center items-center">
+      <div className="flex w-full h-screen justify-center items-center ">
         <div className="border-2 border-emerald-600 p-20 rounded-3xl p-10">
-          <div className="flex justify-center items-center ">
-            <p className="text-center">
-              admin credentials <br />
-              email: admin@gmail.com <br />
-              password: 123
-            </p>
-          </div>
-
+         
           <form
             onSubmit={(e) => {
               submitHandler(e);
             }}
-            className="flex flex-col items-center justify-center"
+            className="flex flex-col items-center justify-center "
           >
             <input
               required
@@ -51,8 +44,26 @@ const Login = ({ handleLogin }) => {
               Log in
             </button>
           </form>
+          
         </div>
+        
       </div>
+       <div className="flex justify-center items-center -mt-1.5">
+            <p className="text-center">
+              admin credentials <br />
+              email: admin@gmail.com <br />
+              password: 123
+            </p>
+          </div>
+           <div className="flex justify-center items-center ">
+            <p className="text-center">
+              can check by assigning task to : <br />
+              email: abc@gmail.com <br />
+              password: 123
+              name:Aarav
+            </p>
+          </div>
+
     </>
   );
 };
